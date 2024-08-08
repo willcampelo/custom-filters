@@ -1,0 +1,51 @@
+/* Estilos personalizados para Awesome Table */
+.filter-container {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 100;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.filter-container .filter {
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-container .filter label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.filter-container .filter select, 
+.filter-container .filter input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+/* Certifique-se de que o contêiner de filtros esteja no topo da página */
+body {
+  margin: 0;
+  padding-top: 60px; /* Ajuste este valor com base na altura do seu contêiner de filtros */
+}
+
+/* Opcional: Personalize a aparência dos filtros */
+.filter-container .filter select:hover, 
+.filter-container .filter input:hover {
+  border-color: #888;
+}
+
+.filter-container .filter select:focus, 
+.filter-container .filter input:focus {
+  border-color: #555;
+  outline: none;
+}
+
+/* Outros estilos personalizados podem ser adicionados aqui */
